@@ -6,9 +6,9 @@ A tool to fetch and validate the quality of data from Open Referral UK APIs.
 
 The Family Hubs DfE delivery team use this tool to pull and quality check the data available on current (as of Dec 2024) Open Referral UK APIs.
 
-## Data source
+## Pre-requisites
 
-The list of APIs was gathered from here: https://openreferraluk.org/dashboard
+- node (built using v23.4.0; will probably run on nearby versions)
 
 ## Usage
 
