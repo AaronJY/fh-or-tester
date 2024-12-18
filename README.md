@@ -19,7 +19,7 @@ The list of APIs was gathered from here: https://openreferraluk.org/dashboard
 
 Results will be shown in the console:
 
-```
+```sh
 ...
 │ 817     │ 'f92ddae3-2007-8cf8-c9eb-ec2aad962f2a' │ false      │ true         │ true                │ true        │ true                 │ true            │
 │ 818     │ 'dbb17998-b11a-45e7-ac1f-2bae60e40e0a' │ true       │ true         │ true                │ true        │ true                 │ false           │
@@ -34,11 +34,24 @@ Results will be shown in the console:
 
 **Note:** use the `--help` CLI flag to see more options for each command.
 
-### Example
+### Example usage
 
 To fetch and evaluate the quality of data from Southampton's OR UK API (https://directory.southampton.gov.uk/api):
 
-```
+```sh
 $ node bin/fetch.js https://directory.southampton.gov.uk/api/services
 $ node bin/eval.js ./data/directorysouthamptongovuk.json
 ```
+
+### Fetching all current OR UK-compliant local authority data
+
+The following snippet will fetch data from all current (as of Dec 2024) OR UK-compliant local authorities with APIs on the [OR UK dashboard](https://openreferraluk.org/dashboard):
+
+```sh
+node bin/fetch.js https://bristol.openplace.directory/o/ServiceDirectoryService/v2/services
+node bin/fetch.js https://northlincs.openplace.directory/o/ServiceDirectoryService/v2/services
+node bin/fetch.js https://directory.southampton.gov.uk/api/services
+node bin/fetch.js https://api.familyinfo.buckinghamshire.gov.uk/api/v1/services
+node bin/fetch.js https://penninelancs.openplace.directory/o/ServiceDirectoryService/v2/services
+```
+
