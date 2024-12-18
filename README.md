@@ -24,12 +24,19 @@ Results will be shown in the console:
 │ 817     │ 'f92ddae3-2007-8cf8-c9eb-ec2aad962f2a' │ false      │ true         │ true                │ true        │ true                 │ true            │
 │ 818     │ 'dbb17998-b11a-45e7-ac1f-2bae60e40e0a' │ true       │ true         │ true                │ true        │ true                 │ false           │
 └─────────┴────────────────────────────────────────┴────────────┴──────────────┴─────────────────────┴─────────────┴──────────────────────┴─────────────────┘
-# of services with a valid ID: 399/819 (49%)
-# of services with a valid name: 818/819 (100%)
-# of services with a valid description: 819/819 (100%)
-# of services with a valid URL: 691/819 (84%)
-# of services with a valid organisation: 812/819 (99%)
-# of services with a valid contact: 598/819 (73%)
+--------------------
+RESULTS
+--------------------
+# of services with a valid ID: 0/1157 (0%)
+# of services with a valid status: 1152/1157 (100%)
+# of services with a valid name: 1157/1157 (100%)
+# of services with a valid description: 1135/1157 (98%)
+# of services with a valid URL: 979/1157 (85%)
+# of services with a valid organisation: 1149/1157 (99%)
+# of services with a valid contact: 0/1157 (0%)
+--------------------
+# of usable services: 0/1157 (0%)
+--------------------
 ```
 
 **Note:** use the `--help` CLI flag to see more options for each command.
