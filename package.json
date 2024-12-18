@@ -4,8 +4,5 @@
   "scripts": {
     "fetch": "node script-fetch.js",
     "eval": "node script-eval.js"
-  },
-  "dependencies": {
-    "uuid": "^11.0.3"
   }
 }
