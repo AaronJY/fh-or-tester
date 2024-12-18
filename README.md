@@ -14,8 +14,8 @@ The list of APIs was gathered from here: https://openreferraluk.org/dashboard
 
 1. Clone the repo
 2. Run `npm install` to install node dependencies
-3. Run `npm run fetch` to fetch up to date data
-4. Run `npm run eval ./data/Bristol\ Council.json` to run the evaluation tool over the pulled data (swapping the path to whatever LA data you want to evaluate)
+3. Run `node bin/fetch.js <url>` to fetch and save a JSON file containing an array of services data.
+4. Run `node bin/eval.js <path>` to run the evaluation tool over a JSON file generated from step 3.
 
 Results will be shown in the console:
 
@@ -32,7 +32,13 @@ Results will be shown in the console:
 # of services with a valid contact: 598/819 (73%)
 ```
 
-### Updating the list of APIs
+**Note:** use the `--help` CLI flag to see more options for each command.
 
-An insomnium JSON file (`./insomoum.json`) is used to store the list of endpoints the tool fetches data from. To edit the list using a UI, download and install the [Insomnium](https://github.com/ArchGPT/insomnium) REST API client and open the JSON file.
+### Example
 
+To fetch and evaluate the quality of data from Southampton's OR UK API (https://directory.southampton.gov.uk/api):
+
+```
+$ node bin/fetch.js https://directory.southampton.gov.uk/api/services
+$ node bin/eval.js ./data/directorysouthamptongovuk.json
+```

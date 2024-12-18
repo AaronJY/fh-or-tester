@@ -1,8 +1,9 @@
 {
   "name": "or-uk-data-quality-checker",
+  "description": "A tool to fetch and validate the quality of data from Open Referral UK APIs.",
+  "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "fetch": "node script-fetch.js",
-    "eval": "node script-eval.js"
+  "dependencies": {
+    "commander": "^12.1.0"
   }
 }
