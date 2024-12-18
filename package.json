@@ -1,5 +1,5 @@
 {
-  "name": "fh-or-tester",
+  "name": "or-uk-data-quality-checker",
   "main": "index.js",
   "scripts": {
     "fetch": "node script-fetch.js",
