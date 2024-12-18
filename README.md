@@ -31,3 +31,8 @@ Results will be shown in the console:
 # of services with a valid organisation: 812/819 (99%)
 # of services with a valid contact: 598/819 (73%)
 ```
+
+### Updating the list of APIs
+
+An insomnium JSON file (`./insomoum.json`) is used to store the list of endpoints the tool fetches data from. To edit the list using a UI, download and install the [Insomnium](https://github.com/ArchGPT/insomnium) REST API client and open the JSON file.
+
