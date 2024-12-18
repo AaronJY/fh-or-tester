@@ -15,7 +15,7 @@ The list of APIs was gathered from here: https://openreferraluk.org/dashboard
 1. Clone the repo
 2. Run `npm install` to install node dependencies
 3. Run `npm run fetch` to fetch up to date data
-4. Run `npm run eval` to run the evaluation tool over the pulled data
+4. Run `npm run eval ./data/Bristol\ Council.json` to run the evaluation tool over the pulled data (swapping the path to whatever LA data you want to evaluate)
 
 Results will be shown in the console:
 
